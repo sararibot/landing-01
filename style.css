@@ -69,6 +69,13 @@ h1 {
 
 h2 {
     font-family: 'DM Sans';
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}  
+
+h3 {
+    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 20px;
     color:dimgrey;
@@ -110,4 +117,36 @@ button:hover {
 
 button a:hover {
     color: #000;
+}
+
+.elements {
+    align-items: center;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap; /* Que les targetes quedin una sota l'altre si no hi ha espai */
+    justify-content: space-around;
+    gap: 2em;
+    margin: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;/* Col·loca els elements en columna (icona sobre text) */
+    align-items: center;
+    text-align: center;
+    border: 1px solid dimgray;
+    border-radius: 20px;
+    background-color: white;
+    padding: 4em;
+}
+
+.card i{
+    font-size: 2em;
+    margin-bottom: 1em;
+    background-color: transparent;
+}
+.card p {
+    background-color: transparent;
 }
