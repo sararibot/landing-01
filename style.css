@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #e5e6e1;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
 }
 
 header {
-    background: #e5e6e1;
     display: flex;
     padding: 1em;
     align-items: center;
@@ -37,5 +37,77 @@ header img {
 }
 
 .links a:hover {
-    color: blue;
+    text-decoration: line-through;
 }  
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+img {
+    width: 100rem;
+    height: 40rem;
+    border-radius: 50px;
+
+}
+
+figcaption {
+    font-size: 16px;
+    color: gray;
+}
+
+h1 {
+    font-family: 'Cormorant';
+    font-weight: 600;
+    font-size: 4em;
+    text-align: center;
+}  
+
+h2 {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 20px;
+    color:dimgrey;
+    text-align: center;
+}  
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+} 
+
+button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #000;
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
+button a {
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: transparent; /* S'ha de deixar transparent perquè hereti el color del botó */
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+} 
+
+button:hover {
+    border: 2px solid #000; /* Recordar com funciona el border*/
+    background-color: antiquewhite;
+} 
+
+button a:hover {
+    color: #000;
+}
