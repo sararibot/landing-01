@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #e5e6e1;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
     font-size: 20px;
     width: 100%;
     height: 100%;
+    background-color: #e5e6e1;
 }
 
 header {
@@ -149,4 +149,52 @@ button a:hover {
 }
 .card p {
     background-color: transparent;
+}
+
+.quote {
+    margin: 2em 0;
+    padding: 6em;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.quote p {
+    font-family: "Cormorant";
+    background-color: transparent;
+    font-size: 3em;
+}
+
+.quote p.author{
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 1em;
+}
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr; /* Define dos columnas, una más ancha que la otra */
+    align-items: center; /* Centra verticalmente el contenido */
+    gap: 2em; /* Espacio entre el texto y el botón */
+    padding: 4em;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 5em;
+}
+
+.cta-content {
+    max-width: 100%;
+}
+
+.cta-text {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
+.cta-button {
+    margin: 0 4em;
+}
+
+.cta-button:hover {
+    margin: 0 4em;
+    color: #000;
 }
